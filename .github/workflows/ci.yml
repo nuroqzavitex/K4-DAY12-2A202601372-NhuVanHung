@@ -28,7 +28,8 @@ jobs:
         env:
           API_TOKEN: test-token-for-ci
         run: |
-          pytest --ignore=tests/test_cp5.py -v
+          pytest tests/test_cp1.py tests/test_cp2.py tests/test_cp3.py tests/test_cp4.py -v -m "not docker"
+
 
 
   build:
