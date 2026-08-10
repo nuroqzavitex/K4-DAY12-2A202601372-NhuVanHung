@@ -26,9 +26,10 @@ jobs:
 
       - name: Run tests
         env:
-          API_TOKEN: ${{ secrets.API_TOKEN }}
+          API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pytest tests/test_cp1.py tests/test_cp2.py tests/test_cp3.py tests/test_cp4.py -v -m "not docker"
+
 
 
 
