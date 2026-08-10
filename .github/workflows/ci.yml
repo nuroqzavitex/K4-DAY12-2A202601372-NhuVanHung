@@ -57,4 +57,5 @@ jobs:
 
       - name: Deploy application
         run: |
-          echo "Deploying with token ${{ secrets.RAILWAY_TOKEN }}"
+          echo "Deploying with token ${{ secrets.GITHUB_TOKEN }}"
+
